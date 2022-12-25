@@ -1,5 +1,5 @@
 input.onButtonPressed(Button.AB, function () {
-    if (input.soundLevel() >= 150) {
+    if (input.soundLevel() >= 100) {
         basic.showIcon(IconNames.Heart)
         basic.pause(500)
         basic.clearScreen()
