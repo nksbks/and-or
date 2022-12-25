@@ -5,7 +5,7 @@ function DO () {
     basic.clearScreen()
 }
 input.onButtonPressed(Button.AB, function () {
-    if (input.soundLevel() >= 100) {
+    if (input.soundLevel() >= 80) {
         DO()
     }
 })
@@ -33,5 +33,6 @@ input.onLogoEvent(TouchButtonEvent.Pressed, function () {
     }
 })
 let gate = 0
+input.setSoundThreshold(SoundThreshold.Loud, 80)
 gate = 1
 basic.showString("OR")
